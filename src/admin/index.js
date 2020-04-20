@@ -24,12 +24,14 @@ const Admin = () => {
 	
 	const ScanQRCode = () => {
 		return (
-			<QrReader
-				delay={300}
-				onError={handleError}
-				onScan={handleScan}
-				style={{ width: '320px' }}
-			/>
+			<div className="QRCode">
+				<QrReader
+					delay={300}
+					onError={handleError}
+					onScan={handleScan}
+					style={{ width: '320px' }}
+				/>
+			</div>
 		)
 	}
 
